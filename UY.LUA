@@ -112,3 +112,9 @@ sound:Play()
 
     end)
 end)
+
+mainSection:Button("蛋糕发射器", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RedTree1222/scripts/refs/heads/main/Protected_4021534790564889.lua",true))()
+    end)
+end)
