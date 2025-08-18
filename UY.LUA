@@ -130,3 +130,9 @@ mainSection:Button("自瞄", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/Test/1.1"))()
     end)
 end)
+
+mainSection:Slider("POV调节", "", 1, 180, 30, function(value)
+    if getgenv().SilentAimSettings then
+        getgenv().SilentAimSettings.POV = value
+    end
+end)
