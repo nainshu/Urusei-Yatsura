@@ -130,3 +130,7 @@ mainSection:Button("自瞄", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/Test/1.1"))()
     end)
 end)
+
+mainSection:Slider("视野调整(POV)", "", 70, 120, 70, function(value)
+    game.Workspace.CurrentCamera.FieldOfView = value
+end)
