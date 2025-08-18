@@ -131,17 +131,8 @@ mainSection:Button("自瞄", function()
     end)
 end)
 
-local currentFOV = 70
-local camera = workspace.CurrentCamera
-
--- UI 库滑块
-mainSection:Slider("视野调整(POV)", "", 70, 120, 70, function(value)
-    currentFOV = value
-end)
-
--- 确保 FOV 持续更新
-RunService.RenderStepped:Connect(function()
-    if camera then
-        camera.FieldOfView = currentFOV
-    end
+mainSection:Button("动作中心", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/dancehub.lua",true))()
+    end)
 end)
