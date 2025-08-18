@@ -132,5 +132,14 @@ mainSection:Button("自瞄", function()
 end)
 
 mainSection:Slider("视野调整(POV)", "", 70, 120, 70, function(value)
-    game.Workspace.CurrentCamera.FieldOfView = value
+    
+    print("尝试设置FOV为:", value)
+    
+    local camera = workspace.CurrentCamera
+    if camera then
+        camera.FieldOfView = value
+        print("FOV设置为:", camera.FieldOfView)
+    else
+        warn("无法获取游戏摄像机!")
+    end
 end)
