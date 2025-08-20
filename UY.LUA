@@ -133,7 +133,7 @@ end)
 
 mainSection:Button("动作中心", function()
     pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/dancehub.lua",true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()
     end)
 end)
 
