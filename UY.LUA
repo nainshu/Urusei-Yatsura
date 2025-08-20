@@ -142,3 +142,15 @@ mainSection:Button("无标题标签游戏", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/nAlwspa/Into/refs/heads/main/Loader'))()
     end)
 end)
+
+mainSection:Button("在墙上走", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    end)
+end)
+
+mainSection:Button("重置人物", function()
+    pcall(function()
+        game.Players.LocalPlayer.Character.Humanoid.Health=0
+    end)
+end)
