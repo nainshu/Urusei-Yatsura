@@ -154,3 +154,9 @@ mainSection:Button("重置人物", function()
         game.Players.LocalPlayer.Character.Humanoid.Health=0
     end)
 end)
+
+mainSection:Button("飞车", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/CarFly.lua",true))()
+    end)
+end)
