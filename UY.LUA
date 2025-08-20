@@ -127,7 +127,7 @@ end)
 
 mainSection:Button("自瞄", function()
     pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/Test/1.1"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/1.2"))()
     end)
 end)
 
