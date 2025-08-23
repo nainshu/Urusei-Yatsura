@@ -11,7 +11,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nains
 
 local window = library.new(library, "Urusei Yatsura", "Urusei Yatsura")
 
-local mainTab = window:Tab("主页面", "rbxassetid://139972859056573")
+local mainTab = window:Tab("主页面", "rbxassetid://85405545906279")
 local mainSection = mainTab:section("主要功能", true)
 
 mainSection:Button("倒计时", function()
@@ -99,7 +99,7 @@ mainSection:Button("重置人物", function()
     end)
 end)
 
-local FETab = window:Tab("FE", "rbxassetid://139972859056573")
+local FETab = window:Tab("FE", "rbxassetid://85405545906279")
 local FESection = FETab:section("主要功能", true)
 
 FESection:Button("飞车", function()
@@ -144,7 +144,7 @@ FESection:Button("绯红之王FE", function()
     end)
 end)
 
-local DOORSTab = window:Tab("DOORS", "rbxassetid://139972859056573")
+local DOORSTab = window:Tab("DOORS", "rbxassetid://85405545906279")
 local DOORSSection = DOORSTab:section("趣味道具", true)
 
 DOORSSection:Button("DOORS Figure头", function()
@@ -187,7 +187,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/m
     end)
 end)
 
-local ballTab = window:Tab("躲避球", "rbxassetid://139972859056573")
+local ballTab = window:Tab("躲避球", "rbxassetid://85405545906279")
 local ballSection = ballTab:section("脚本", true)
 
 ballSection:Button("躲避球", function()
@@ -196,7 +196,7 @@ ballSection:Button("躲避球", function()
     end)
 end)
 
-local inkTab = window:Tab("墨水游戏", "rbxassetid://139972859056573")
+local inkTab = window:Tab("墨水游戏", "rbxassetid://85405545906279")
 local inkSection = inkTab:section("脚本", true)
 
 inkSection:Button("墨水游戏", function()
@@ -205,7 +205,7 @@ inkSection:Button("墨水游戏", function()
     end)
 end)
 
-local NOTTab = window:Tab("无标签游戏", "rbxassetid://139972859056573")
+local NOTTab = window:Tab("无标签游戏", "rbxassetid://85405545906279")
 local NOTSection = NOTTab:section("主要功能", true)
 
 NOTSection:Button("无标题标签游戏", function()
@@ -214,7 +214,7 @@ NOTSection:Button("无标题标签游戏", function()
     end)
 end)
 
-local nightTab = window:Tab("99夜", "rbxassetid://139972859056573")
+local nightTab = window:Tab("99夜", "rbxassetid://85405545906279")
 local nightSection = nightTab:section("主要功能", true)
 
 nightSection:Button("99夜汉化", function()
@@ -223,7 +223,7 @@ nightSection:Button("99夜汉化", function()
     end)
 end)
 
-local zobTab = window:Tab("僵尸猎杀", "rbxassetid://139972859056573")
+local zobTab = window:Tab("僵尸猎杀", "rbxassetid://85405545906279")
 local zobSection = zobTab:section("卡密ScriptsRBX-HAD9U", true)
 
 zobSection:Button("僵尸猎杀", function()
