@@ -75,6 +75,18 @@ mainSection:Button("皮划艇锦标赛脚本", function()
     end)
 end)
 
+mainSection:Button("甩飞GUI", function()
+    pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/crazyfling.lua'))()
+    end)
+end)
+
+mainSection:Button("方块与道具", function()
+    pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/blocksnprops.lua'))()
+    end)
+end)
+
 mainSection:Button("自瞄", function()
     pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/1.2"))()
