@@ -38,53 +38,9 @@ mainSection:Button("LALOL后门脚本", function()
     end)
 end)
 
-mainSection:Button("自然灾害重力控制", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/NaturalDisasterSimulatorGravityControlScript.lua"))()
-    end)
-end)
-
 mainSection:Button("科创云端", function()
     pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/TechInnovationCloud.lua"))()
-    end)
-end)
-
-mainSection:Button("创世纪FE移动端", function()
-    pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/no/main/Genesismobile.lua'))()
-    end)
-end)
-
-mainSection:Button("创世纪FE移动端黑龙", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/Dragon.lua"))()
-    end)
-end)
-
-mainSection:Button("墨水游戏", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
-    end)
-end)
-
-mainSection:Button("DOORS Figure头", function()
-    pcall(function()
-    
-        local Tool = game:GetObjects("rbxassetid://101804599415530")[1]
-print(Tool, typeof(Tool)) -- just a debug
-Tool.Parent = game.Players.LocalPlayer.Backpack
-
-    end)
-end)
-
-mainSection:Button("DOORS 萝卜怪抱枕", function()
-    pcall(function()
-    
-    local Tool = game:GetObjects("rbxassetid://112332310004804")[1]
-print(Tool, typeof(Tool)) -- just a debug
-Tool.Parent = game.Players.LocalPlayer.Backpack
-
     end)
 end)
 
@@ -113,12 +69,6 @@ sound:Play()
     end)
 end)
 
-mainSection:Button("蛋糕发射器", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RedTree1222/scripts/refs/heads/main/Protected_4021534790564889.lua",true))()
-    end)
-end)
-
 mainSection:Button("皮划艇锦标赛脚本", function()
     pcall(function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/SETHHHX/.../refs/heads/main/%5BNEW%5D%20Kayak%20Racing"))() 
@@ -131,38 +81,135 @@ mainSection:Button("自瞄", function()
     end)
 end)
 
-mainSection:Button("动作中心", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()
-    end)
-end)
-
-mainSection:Button("无标题标签游戏", function()
-    pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nAlwspa/Into/refs/heads/main/Loader'))()
-    end)
-end)
-
-mainSection:Button("在墙上走", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-    end)
-end)
-
 mainSection:Button("重置人物", function()
     pcall(function()
         game.Players.LocalPlayer.Character.Humanoid.Health=0
     end)
 end)
 
-mainSection:Button("飞车", function()
+local FETab = window:Tab("FE", "rbxassetid://139972859056573")
+local FESection = FETab:section("主要功能", true)
+
+FESection:Button("飞车", function()
     pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/CarFly.lua",true))()
     end)
 end)
 
-mainSection:Button("躲避球", function()
+FESection:Button("动作中心", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()
+    end)
+end)
+
+FESection:Button("在墙上走", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    end)
+end)
+
+FESection:Button("自然灾害重力控制", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/NaturalDisasterSimulatorGravityControlScript.lua"))()
+    end)
+end)
+
+FESection:Button("创世纪FE移动端", function()
+    pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/no/main/Genesismobile.lua'))()
+    end)
+end)
+
+FESection:Button("创世纪FE移动端黑龙", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/Dragon.lua"))()
+    end)
+end)
+
+local DOORSTab = window:Tab("DOORS", "rbxassetid://139972859056573")
+local DOORSSection = DOORSTab:section("趣味道具", true)
+
+DOORSSection:Button("DOORS Figure头", function()
+    pcall(function()
+    
+        local Tool = game:GetObjects("rbxassetid://101804599415530")[1]
+print(Tool, typeof(Tool)) -- just a debug
+Tool.Parent = game.Players.LocalPlayer.Backpack
+
+    end)
+end)
+
+DOORSSection:Button("DOORS 萝卜怪抱枕", function()
+    pcall(function()
+    
+    local Tool = game:GetObjects("rbxassetid://112332310004804")[1]
+print(Tool, typeof(Tool)) -- just a debug
+Tool.Parent = game.Players.LocalPlayer.Backpack
+
+    end)
+end)
+
+DOORSSection:Button("蛋糕发射器", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RedTree1222/scripts/refs/heads/main/Protected_4021534790564889.lua",true))()
+    end)
+end)
+
+local DOORSSection = DOORSTab:section("脚本", true)
+
+DOORSSection:Button("blanking", function()
+    pcall(function()
+        _G.KeybindRemove = true
+ ---[true = Remove your Keybind Gui]---
+_G.TopBarRemove = false
+---[true = Remove your Top Bar]---
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/BlackKing"))()
+
+    end)
+end)
+
+local ballTab = window:Tab("躲避球", "rbxassetid://139972859056573")
+local ballSection = ballTab:section("脚本", true)
+
+ballSection:Button("躲避球", function()
     pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/blade-ball-gui-hanhuo.lua",true))()
+    end)
+end)
+
+local inkTab = window:Tab("墨水游戏", "rbxassetid://139972859056573")
+local inkSection = inkTab:section("脚本", true)
+
+inkSection:Button("墨水游戏", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
+    end)
+end)
+
+local NOTTab = window:Tab("无标签游戏", "rbxassetid://139972859056573")
+local NOTSection = NOTTab:section("主要功能", true)
+
+NOTSection:Button("无标题标签游戏", function()
+    pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/nAlwspa/Into/refs/heads/main/Loader'))()
+    end)
+end)
+
+local nightTab = window:Tab("99夜", "rbxassetid://139972859056573")
+local nightSection = nightTab:section("主要功能", true)
+
+nightSection:Button("99夜汉化", function()
+    pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/99night.lua'))()
+    end)
+end)
+
+local zobTab = window:Tab("僵尸猎杀", "rbxassetid://139972859056573")
+local zobSection = zobTab:section("卡密ScriptsRBX-HAD9U", true)
+
+zobSection:Button("僵尸猎杀", function()
+    pcall(function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptsRBXdotCom/scripts/refs/heads/main/zombie'))()
     end)
 end)
