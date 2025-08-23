@@ -1,4 +1,6 @@
-repeat task.wait() until game:IsLoaded()
+repeat
+    task.wait()
+until game:IsLoaded()
 
 local soundId = 109465969478488
 local sound = Instance.new("Sound")
@@ -14,229 +16,424 @@ local window = library.new(library, "Urusei Yatsura", "Urusei Yatsura")
 local mainTab = window:Tab("主页面", "rbxassetid://85405545906279")
 local mainSection = mainTab:section("主要功能", true)
 
-mainSection:Button("倒计时", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LX318/LX/main/time.lua"))()
-    end)
-end)
+mainSection:Button(
+    "倒计时",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/LX318/LX/main/time.lua"))()
+            end
+        )
+    end
+)
 
-mainSection:Button("MP3[只有忍者才能用]", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/mp3/main/MP3.lua"))()
-    end)
-end)
+mainSection:Button(
+    "MP3[只有忍者才能用]",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/mp3/main/MP3.lua"))()
+            end
+        )
+    end
+)
 
-mainSection:Button("Cobalt", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://github.com/notpoiu/cobalt/releases/latest/download/Cobalt.luau"))()
-    end)
-end)
+mainSection:Button(
+    "Cobalt",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://github.com/notpoiu/cobalt/releases/latest/download/Cobalt.luau"))()
+            end
+        )
+    end
+)
 
-mainSection:Button("LALOL后门脚本", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script"))()
-    end)
-end)
+mainSection:Button(
+    "LALOL后门脚本",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet("https://raw.githubusercontent.com/its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script")
+                )()
+            end
+        )
+    end
+)
 
-mainSection:Button("科创云端", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/TechInnovationCloud.lua"))()
-    end)
-end)
+mainSection:Button(
+    "科创云端",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/TechInnovationCloud.lua"))()
+            end
+        )
+    end
+)
 
-mainSection:Button("跑路中心", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/RunawayHUB/main/RunawayHUB.lua"))()
-    end)
-end)
+mainSection:Button(
+    "跑路中心",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/RunawayHUB/main/RunawayHUB.lua"))()
+            end
+        )
+    end
+)
 
-mainSection:Button("Real HUB", function()
-    pcall(function()
-        loadstring(game:HttpGet"https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
-    end)
-end)
+mainSection:Button(
+    "Real HUB",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet "https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
+            end
+        )
+    end
+)
 
-mainSection:Button("欢迎语", function()
-    pcall(function()
-    
-        local soundId = 109465969478488
-local sound = Instance.new("Sound")
-sound.SoundId = "rbxassetid://" .. soundId
-sound.Volume = 30
-sound.Parent = workspace
-sound:Play()
+mainSection:Button(
+    "欢迎语",
+    function()
+        pcall(
+            function()
+                local soundId = 109465969478488
+                local sound = Instance.new("Sound")
+                sound.SoundId = "rbxassetid://" .. soundId
+                sound.Volume = 30
+                sound.Parent = workspace
+                sound:Play()
+            end
+        )
+    end
+)
 
-    end)
-end)
+mainSection:Button(
+    "皮划艇锦标赛脚本",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/SETHHHX/.../refs/heads/main/%5BNEW%5D%20Kayak%20Racing"
+                    )
+                )()
+            end
+        )
+    end
+)
 
-mainSection:Button("皮划艇锦标赛脚本", function()
-    pcall(function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/SETHHHX/.../refs/heads/main/%5BNEW%5D%20Kayak%20Racing"))() 
-    end)
-end)
+mainSection:Button(
+    "甩飞GUI",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/crazyfling.lua"
+                    )
+                )()
+            end
+        )
+    end
+)
 
-mainSection:Button("甩飞GUI", function()
-    pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/crazyfling.lua'))()
-    end)
-end)
+mainSection:Button(
+    "方块与道具",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/blocksnprops.lua"
+                    )
+                )()
+            end
+        )
+    end
+)
 
-mainSection:Button("方块与道具", function()
-    pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/blocksnprops.lua'))()
-    end)
-end)
+mainSection:Button(
+    "自瞄",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/1.2")
+                )()
+            end
+        )
+    end
+)
 
-mainSection:Button("自瞄", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fcsdsss/games/refs/heads/main/Silent%20aim/1.2"))()
-    end)
-end)
-
-mainSection:Button("重置人物", function()
-    pcall(function()
-        game.Players.LocalPlayer.Character.Humanoid.Health=0
-    end)
-end)
+mainSection:Button(
+    "重置人物",
+    function()
+        pcall(
+            function()
+                game.Players.LocalPlayer.Character.Humanoid.Health = 0
+            end
+        )
+    end
+)
 
 local FETab = window:Tab("FE", "rbxassetid://85405545906279")
 local FESection = FETab:section("主要功能", true)
 
-FESection:Button("飞车", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/CarFly.lua",true))()
-    end)
-end)
+FESection:Button(
+    "飞车",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/CarFly.lua",
+                        true
+                    )
+                )()
+            end
+        )
+    end
+)
 
-FESection:Button("动作中心", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()
-    end)
-end)
+FESection:Button(
+    "动作中心",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))(
 
-FESection:Button("在墙上走", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-    end)
-end)
+                )
+            end
+        )
+    end
+)
 
-FESection:Button("自然灾害重力控制", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/NaturalDisasterSimulatorGravityControlScript.lua"))()
-    end)
-end)
+FESection:Button(
+    "在墙上走",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+            end
+        )
+    end
+)
 
-FESection:Button("创世纪FE移动端", function()
-    pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/no/main/Genesismobile.lua'))()
-    end)
-end)
+FESection:Button(
+    "自然灾害重力控制",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/nainshu/no/main/NaturalDisasterSimulatorGravityControlScript.lua"
+                    )
+                )()
+            end
+        )
+    end
+)
 
-FESection:Button("创世纪FE移动端黑龙", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/Dragon.lua"))()
-    end)
-end)
+FESection:Button(
+    "创世纪FE移动端",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/Genesismobile.lua"))()
+            end
+        )
+    end
+)
 
-FESection:Button("绯红之王FE", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/redking.lua"))()
-    end)
-end)
+FESection:Button(
+    "创世纪FE移动端黑龙",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/no/main/Dragon.lua"))()
+            end
+        )
+    end
+)
+
+FESection:Button(
+    "绯红之王FE",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/redking.lua")
+                )()
+            end
+        )
+    end
+)
 
 local DOORSTab = window:Tab("DOORS", "rbxassetid://85405545906279")
 local DOORSSection = DOORSTab:section("趣味道具", true)
 
-DOORSSection:Button("DOORS Figure头", function()
-    pcall(function()
-    
-        local Tool = game:GetObjects("rbxassetid://112332310004804")[1]
-print(Tool, typeof(Tool)) -- just a debug
-Tool.Parent = game.Players.LocalPlayer.Backpack
+DOORSSection:Button(
+    "DOORS Figure头",
+    function()
+        pcall(
+            function()
+                local Tool = game:GetObjects("rbxassetid://112332310004804")[1]
+                print(Tool, typeof(Tool)) -- just a debug
+                Tool.Parent = game.Players.LocalPlayer.Backpack
+            end
+        )
+    end
+)
 
+DOORSSection:Button(
+    "DOORS 萝卜怪抱枕",
+    function()
+        pcall(
+            function()
+                local Tool = game:GetObjects("rbxassetid://101804599415530")[1]
+                print(Tool, typeof(Tool)) -- just a debug
+                Tool.Parent = game.Players.LocalPlayer.Backpack
+            end
+        )
+    end
+)
 
-    end)
-end)
-
-DOORSSection:Button("DOORS 萝卜怪抱枕", function()
-    pcall(function()
-    
-    local Tool = game:GetObjects("rbxassetid://101804599415530")[1]
-print(Tool, typeof(Tool)) -- just a debug
-Tool.Parent = game.Players.LocalPlayer.Backpack
-    end)
-end)
-
-DOORSSection:Button("蛋糕发射器", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RedTree1222/scripts/refs/heads/main/Protected_4021534790564889.lua",true))()
-    end)
-end)
+DOORSSection:Button(
+    "蛋糕发射器",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/RedTree1222/scripts/refs/heads/main/Protected_4021534790564889.lua",
+                        true
+                    )
+                )()
+            end
+        )
+    end
+)
 
 local DOORSSection = DOORSTab:section("脚本", true)
 
-DOORSSection:Button("blanking", function()
-    pcall(function()
-        _G.KeybindRemove = true
- ---[true = Remove your Keybind Gui]---
-_G.TopBarRemove = false
----[true = Remove your Top Bar]---
+DOORSSection:Button(
+    "blanking",
+    function()
+        pcall(
+            function()
+                _G.KeybindRemove = true
+                ---[true = Remove your Keybind Gui]---
+                _G.TopBarRemove = false
+                ---[true = Remove your Top Bar]---
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/BlackKing"))()
-
-    end)
-end)
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/BlackKing"))()
+            end
+        )
+    end
+)
 
 local ballTab = window:Tab("躲避球", "rbxassetid://85405545906279")
 local ballSection = ballTab:section("脚本", true)
 
-ballSection:Button("躲避球", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/blade-ball-gui-hanhuo.lua",true))()
-    end)
-end)
+ballSection:Button(
+    "躲避球",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/blade-ball-gui-hanhuo.lua",
+                        true
+                    )
+                )()
+            end
+        )
+    end
+)
 
 local inkTab = window:Tab("墨水游戏", "rbxassetid://85405545906279")
 local inkSection = inkTab:section("脚本", true)
 
-inkSection:Button("墨水游戏", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"))()
-    end)
-end)
+inkSection:Button(
+    "墨水游戏",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/wefwef127382/inkgames.github.io/refs/heads/main/ringta.lua"
+                    )
+                )()
+            end
+        )
+    end
+)
 
 local NOTTab = window:Tab("无标签游戏", "rbxassetid://85405545906279")
 local NOTSection = NOTTab:section("主要功能", true)
 
-NOTSection:Button("无标题标签游戏", function()
-    pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nAlwspa/Into/refs/heads/main/Loader'))()
-    end)
-end)
+NOTSection:Button(
+    "无标题标签游戏",
+    function()
+        pcall(
+            function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/nAlwspa/Into/refs/heads/main/Loader"))()
+            end
+        )
+    end
+)
 
 local nightTab = window:Tab("99夜", "rbxassetid://85405545906279")
 local nightSection = nightTab:section("主要功能", true)
 
-nightSection:Button("99夜汉化", function()
-    pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/99night.lua'))()
-    end)
-end)
+nightSection:Button(
+    "99夜汉化",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/99night.lua")
+                )()
+            end
+        )
+    end
+)
 
 local zobTab = window:Tab("僵尸猎杀", "rbxassetid://85405545906279")
 local zobSection = zobTab:section("卡密ScriptsRBX-HAD9U", true)
 
-zobSection:Button("僵尸猎杀", function()
-    pcall(function()
-       loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptsRBXdotCom/scripts/refs/heads/main/zombie'))()
-    end)
-end)
+zobSection:Button(
+    "僵尸猎杀",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet("https://raw.githubusercontent.com/ScriptsRBXdotCom/scripts/refs/heads/main/zombie")
+                )()
+            end
+        )
+    end
+)
 
 local SEWHTab = window:Tab("即将发生不好的事情", "rbxassetid://139972859056573")
 local SEWHSection = SEWHTab:section("脚本", true)
 
-SEWHSection:Button("SEWH", function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/SEWH.lua",true))()
-    end)
-end)
+SEWHSection:Button(
+    "SEWH",
+    function()
+        pcall(
+            function()
+                loadstring(
+                    game:HttpGet(
+                        "https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/SEWH.lua",
+                        true
+                    )
+                )()
+            end
+        )
+    end
+)
