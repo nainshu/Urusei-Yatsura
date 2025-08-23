@@ -231,3 +231,12 @@ zobSection:Button("僵尸猎杀", function()
        loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptsRBXdotCom/scripts/refs/heads/main/zombie'))()
     end)
 end)
+
+local SEWHTab = window:Tab("即将发生不好的事情", "rbxassetid://139972859056573")
+local SEWHSection = SEWHTab:section("脚本", true)
+
+SEWHSection:Button("SEWH", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/SEWH.lua",true))()
+    end)
+end)
