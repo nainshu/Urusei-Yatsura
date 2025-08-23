@@ -132,9 +132,10 @@ local DOORSSection = DOORSTab:section("趣味道具", true)
 DOORSSection:Button("DOORS Figure头", function()
     pcall(function()
     
-        local Tool = game:GetObjects("rbxassetid://101804599415530")[1]
+        local Tool = game:GetObjects("rbxassetid://112332310004804")[1]
 print(Tool, typeof(Tool)) -- just a debug
 Tool.Parent = game.Players.LocalPlayer.Backpack
+
 
     end)
 end)
@@ -142,10 +143,9 @@ end)
 DOORSSection:Button("DOORS 萝卜怪抱枕", function()
     pcall(function()
     
-    local Tool = game:GetObjects("rbxassetid://112332310004804")[1]
+    local Tool = game:GetObjects("rbxassetid://101804599415530")[1]
 print(Tool, typeof(Tool)) -- just a debug
 Tool.Parent = game.Players.LocalPlayer.Backpack
-
     end)
 end)
 
