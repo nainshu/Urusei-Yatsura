@@ -240,3 +240,12 @@ SEWHSection:Button("SEWH", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/SEWH.lua",true))()
     end)
 end)
+
+local NHTab = window:Tab("偷走脑红", "rbxassetid://139972859056573")
+local NHSection = NHTab:section("脚本", true)
+
+NHSection:Button("偷走脑红", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/NaoHong.lua",true))()
+    end)
+end)
