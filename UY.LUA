@@ -126,6 +126,12 @@ FESection:Button("创世纪FE移动端黑龙", function()
     end)
 end)
 
+FESection:Button("绯红之王FE", function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nainshu/Urusei-Yatsura/refs/heads/main/redking.lua"))()
+    end)
+end)
+
 local DOORSTab = window:Tab("DOORS", "rbxassetid://139972859056573")
 local DOORSSection = DOORSTab:section("趣味道具", true)
 
