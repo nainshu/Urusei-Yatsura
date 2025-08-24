@@ -34,7 +34,7 @@ if game.GameId == 4019583467 then
         Resize = true,
         MinSize = Vector2.new(470, 380),
         Acrylic = true,
-        Theme = "深色",
+        Theme = "Dark",
         MinimizeKey = Enum.KeyCode.LeftControl
     }
 
@@ -368,53 +368,39 @@ if game.GameId == 4019583467 then
         )
 
         ToggleESP:OnChanged(
-            function()
-                if Options.ToggleESP.Value then
-                    while Options.ToggleESP.Value do
-                        for _, player in pairs(workspace:GetDescendants()) do
-                            if player:IsA("Model") and player:FindFirstChild("HumanoidRootPart") then
-                                if player:FindFirstChild("HumanoidRootPart").CollisionGroup == "玩家" and player ~= char then
-                                    local playerObject = players:GetPlayerFromCharacter(player)
-
-                                    if playerObject and playerObject.Team and playerObject.Team.Name == "Sheriffs" then
-                                        if player:FindFirstChild("透视") then
-                                            player:FindFirstChild("透视").Color3 = Color3.new(0, 0, 1)
-                                        else
-                                            local box = Instance.new("BoxHandleAdornment", player)
-                                            box.Name = "透视"
-                                            box.Adornee = player
-                                            box.AlwaysOnTop = true
-                                            box.Size = Vector3.new(4, 5, 1)
-                                            box.ZIndex = 0
-                                            box.Transparency = 0.3
-                                            box.Color3 = Color3.new(0, 0, 1)
-                                        end
-                                    else
-                                        if not player:FindFirstChild("透视") then
-                                            local box = Instance.new("BoxHandleAdornment", player)
-                                            box.Name = "透视"
-                                            box.Adornee = player
-                                            box.AlwaysOnTop = true
-                                            box.Size = Vector3.new(4, 5, 1)
-                                            box.ZIndex = 0
-                                            box.Transparency = 0.3
-                                            box.Color3 = Color3.new(0, 1, 0)
-                                        end
-                                    end
-                                end
+    function()
+        if Options.ToggleESP.Value then
+            while Options.ToggleESP.Value do
+                for _, player in pairs(workspace:GetDescendants()) do
+                    if player:IsA("Model") and player:FindFirstChild("HumanoidRootPart") then
+                        if player:FindFirstChild("HumanoidRootPart").CollisionGroup == "Player" and player ~= char then
+                            -- 保持英文对象名称
+                            if player:FindFirstChild("ESP") then
+                                player:FindFirstChild("ESP").Color3 = Color3.new(0, 0, 1)
+                            else
+                                local box = Instance.new("BoxHandleAdornment", player)
+                                box.Name = "ESP"  -- 保持英文
+                                box.Adornee = player
+                                box.AlwaysOnTop = true
+                                box.Size = Vector3.new(4, 5, 1)
+                                box.ZIndex = 0
+                                box.Transparency = 0.3
+                                box.Color3 = Color3.new(0, 0, 1)
                             end
-                        end
-                        task.wait(1)
-                    end
-                else
-                    for _, e in pairs(workspace:GetDescendants()) do
-                        if e.Name == "透视" then
-                            e:Destroy()
                         end
                     end
                 end
+                task.wait(1)
             end
-        )
+        else
+            for _, e in pairs(workspace:GetDescendants()) do
+                if e.Name == "ESP" then  -- 保持英文
+                    e:Destroy()
+                end
+            end
+        end
+    end
+)
 
         local InfStamina = Tabs.Player:CreateToggle("InfStamina", {Title = "无限耐力", Default = false})
 
